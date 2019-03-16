@@ -29,6 +29,4 @@ if __name__ == '__main__':
 		some_field = dic["#"]
 			
 		bulk.find({"_id": asset_id}).update({"$set":{"some_field": some_field, "updated_at": datetime.datetime.now()}})
-		print 'updated some id: ' + str(some_id) + ' with some field ' + some_field
 	t = bulk.execute()
-	print(t)
