@@ -1,4 +1,3 @@
-# pip install libs if necessary
 import csv
 import datetime 
 import json
@@ -10,7 +9,6 @@ def jsonReader(the_json):
         the_dict = json.load(json_data)
     return the_dict
 
-# start run
 if __name__ == '__main__':
 
 	username = '###'
