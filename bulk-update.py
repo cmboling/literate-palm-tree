@@ -16,7 +16,7 @@ if __name__ == '__main__':
 	client = MongoClient('mongodb://%s:%s@###/?authSource=admin&readPreference=primary&replicaSet=rs0' % (username, password))
 	db = client["meta"]
 
-	pathJSON = '###.json' # enter relative path to json here
+	pathJSON = '###.json' 
 
 	paths = jsonReader(pathJSON)
 
