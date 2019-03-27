@@ -27,4 +27,4 @@ if __name__ == '__main__':
 		some_field = dic["#"]
 			
 		bulk.find({"_id": asset_id}).update({"$set":{"some_field": some_field, "updated_at": datetime.datetime.now()}})
-	t = bulk.execute()
+	bulkExecute = bulk.execute()
